@@ -1,0 +1,15 @@
+{
+    "name": "florimond/projet-php-todo",
+    "autoload": {
+        "psr-4": {
+            "Florimond\\ProjetPhpTodo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Florimond Jouffroy",
+            "email": "florimond.jouffroy@gmail.com"
+        }
+    ],
+    "require": {}
+}
