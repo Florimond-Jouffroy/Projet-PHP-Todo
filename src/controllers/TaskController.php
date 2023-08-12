@@ -2,11 +2,16 @@
 
 namespace App\Controllers;
 
+use App\Managers\TaskManager;
+
 class TaskController extends Controller
 {
 
   public function showAll()
   {
-    return $this->render('tasks.html.twig');
+    $taskManager = new TaskManager();
+    $tasks = $taskManager->getAllTasks();
+
+    return $this->render('tasks/tasks.html.twig', ['tasks' => $tasks]);
   }
 }

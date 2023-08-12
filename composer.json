@@ -3,7 +3,9 @@
   "autoload": {
     "psr-4": {
       "App\\Controllers\\": "src/controllers/",
-      "App\\Services\\": "src/services/"
+      "App\\Services\\": "src/services/",
+      "App\\Entities\\": "src/models/entities",
+      "App\\Managers\\": "src/models/managers"
     }
   },
   "authors": [
@@ -13,7 +15,8 @@
     }
   ],
   "require": {
-    "twig/twig": "^3.0"
+    "twig/twig": "^3.0",
+    "vlucas/phpdotenv": "^5.5"
   },
   "scripts": {
     "compile": "sass assets/styles/main.scss public/css/style.css"

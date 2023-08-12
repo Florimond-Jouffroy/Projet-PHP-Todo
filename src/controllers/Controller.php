@@ -62,6 +62,7 @@ abstract class Controller
   {
     $path = getenv('ENV_URL') . '/' . $url;
 
+
     if ($args !== null) {
       if (is_array($args)) {
         if (substr($url, -1) != '/') {

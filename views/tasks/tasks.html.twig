@@ -1,0 +1,18 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+
+	<h1>Mes tasks</h1>
+
+	{% if tasks is empty %}
+		<p>Aucune tâche à afficher pour le moment.</p>
+	{% else %}
+		<ul>
+			{% for task in tasks %}
+				<li>{{ task.title }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+
+{% endblock %}
