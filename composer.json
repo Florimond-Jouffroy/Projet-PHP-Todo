@@ -14,5 +14,8 @@
   ],
   "require": {
     "twig/twig": "^3.0"
+  },
+  "scripts": {
+    "compile": "sass assets/styles/main.scss public/css/style.css"
   }
 }
