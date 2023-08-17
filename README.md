@@ -39,11 +39,8 @@ DB_PASSWORD=votre_mot_de_passe
 
 5 - Créez la base de données correspondante à la configuration dans le fichier .env.
 
-6 - Exécutez les migrations pour créer les tables de la base de données :
+6 - Création de table (bientot disponible)
 
-```
-php bin/console.php migrate
-```
 7 - Lancez le serveur web (par exemple, avec PHP's built-in server) :
 
 ```
