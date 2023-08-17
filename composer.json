@@ -19,6 +19,7 @@
     "vlucas/phpdotenv": "^5.5"
   },
   "scripts": {
-    "compile": "sass assets/styles/main.scss public/css/style.css"
+    "compile": "sass assets/styles/main.scss public/css/style.css",
+    "server": "php -S localhost:8000 -t public"
   }
 }

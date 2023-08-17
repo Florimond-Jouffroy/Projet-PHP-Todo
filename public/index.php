@@ -18,6 +18,12 @@ $router = new Router();
 
 $router->get('/', 'HomeController', 'index');
 $router->get('/tasks', 'TaskController', 'showAll');
+$router->post('/tasks/addTask', 'TaskController', 'addTask');
+$router->get('/tasks/addTask', 'TaskController', 'addTask');
+$router->get('/tasks/{id}', 'TaskController', 'showTask');
+$router->post('/tasks/{id}/delete', 'TaskController', 'deleteTask');
+$router->get('/tasks/{id}/edit', 'TaskController', 'editTask');
+$router->post('/tasks/{id}/edit', 'TaskController', 'editTask');
 
 
 

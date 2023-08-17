@@ -1,0 +1,21 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+	<h1>Task Details</h1>
+	<div class="card">
+		<div class="card-body">
+			<h5 class="card-title">{{ task.title }}</h5>
+			<p class="card-text">{{ task.description }}</p>
+			<p class="card-text">Due Date:
+				{{ task.dueDate|date("Y-m-d H:i:s") }}</p>
+		</div>
+	</div>
+	<div class="mt-3">
+		<a href="{{ url('tasks/' ~ task.id ~ '/edit') }}" class="btn btn-primary">Modify</a>
+		<form action="{{ url('tasks/' ~ task.id ~ '/delete') }}" method="post" class="d-inline">
+			<input type="hidden" name="_method" value="DELETE">
+			<button type="submit" class="btn btn-danger">Delete</button>
+		</form>
+		<a href="{{ url('tasks') }}" class="btn btn-secondary">Back to List</a>
+	</div>
+{% endblock %}

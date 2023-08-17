@@ -45,4 +45,9 @@ class Router
   {
     $this->addRoute('POST', $path, $controller, $action); // Appelle la méthode addRoute avec la méthode POST
   }
+
+  public function delete($path, $controller, $action)
+  {
+    $this->addRoute('DELETE', $path, $controller, $action);
+  }
 }
